@@ -94,20 +94,45 @@ if(cabeca != NULL){
 //FUNCAO PRINCIPAL DE EXCUCAO DO PROGRAMA//
 ///////////////////////////////////////////
 
+
 int main (int argc, char *argv[]){
-    inserir(1);
-    inserir(2);
-    inserir(3);
-    inserir(4);
-    inserir(5);
-    inserir(6);
+        int opcao = 0;
+        int numero = 0;
 
-    imprimir();
 
-    remover(100);
-    remover(1);
-    remover(3);
-    remover(6);
+        while (opcao != 4){
+            printf("+====================+\n");
+            printf("|   Menu de opcoes   |\n");
+            printf("+--------------------+\n");
+            printf("| 1 - Inserir        |\n");
+            printf("| 2 - Remover        |\n");
+            printf("| 3 - Imprimir       |\n");
+            printf("| 4 - Sair           |\n");
+            printf("+====================+\n");
+            printf("Digite a opcao: ");
+            scanf("%d", &opcao);
 
-    imprimir();
+
+            switch(opcao){
+                case 1:
+                    printf("Digite o numero: ");
+                    scanf("%d", &numero);
+                    inserir(numero);
+                    break;
+                case 2:
+                    printf("Digite o numero: ");
+                    scanf("%d", &numero);
+                    remover(numero);
+                    break;
+                case 3:
+                    imprimir();
+                    break;
+
+
+
+
+        }
+
+    }
+
 }
