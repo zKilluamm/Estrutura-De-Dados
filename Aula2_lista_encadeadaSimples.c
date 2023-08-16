@@ -47,7 +47,7 @@ void inserir(int numero){
 	}
 }
 	void imprimir(){
-        printf("\n");
+        printf("-----------------\n");
 
         struct no *ponteiro = cabeca;
         while(ponteiro != NULL){
@@ -72,7 +72,7 @@ if(cabeca != NULL){
         //caso dificil, excluir algum no no meio da lista
         struct no *ponteiroAnterior = cabeca;
 
-        while ((ponteiroAnterior -> proximo -> numero != numero)&&
+        while ((ponteiroAnterior -> proximo != NULL)&&
         (ponteiroAnterior -> proximo -> numero !=numero)){
             ponteiroAnterior = ponteiroAnterior -> proximo;
 
